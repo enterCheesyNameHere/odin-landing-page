@@ -5,6 +5,12 @@
 
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ul {
     list-style-type: none;
     display: flex;
@@ -16,6 +22,7 @@ ul {
     background-color: #1f2937;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .subtext {
@@ -78,4 +85,45 @@ button.callToAction {
 
 img {
     width: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.info h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    margin: 50px;
+}
+
+.panels {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 0 1 auto;
+}
+
+.panel img {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3882f6;
+    width: 90%;
+    height: auto;
+}
+
+.panel .subtext {
+    color: grey;
 }
